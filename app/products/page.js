@@ -61,9 +61,13 @@ function ProductsContent() {
               {filtered.map(p => (
                 <Link href={`/products/${p.slug}`} key={p.id} className="product-card card">
                   <div className="product-img">
-                    <div className="product-img-placeholder">
-                      <span>{p.name.split(' ').map(w => w[0]).join('').slice(0,2)}</span>
-                    </div>
+                    {p.image ? (
+                      <img src={p.image} alt={p.name} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                    ) : (
+                      <div className="product-img-placeholder">
+                        <span>{p.name.split(' ').map(w => w[0]).join('').slice(0,2)}</span>
+                      </div>
+                    )}
                   </div>
                   <div className="product-info">
                     <span className="badge badge-primary">{categories.find(c => c.id === p.category)?.name || ''}</span>

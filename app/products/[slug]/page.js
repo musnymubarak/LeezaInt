@@ -40,10 +40,14 @@ export default async function ProductPage({ params }) {
       <section className={s.detailSection}>
         <div className={s.detailLayout}>
           <div className={s.detailImage}>
-            <div className={s.imagePlaceholder}>
-              <span className={s.imageInitials}>{product.name.split(' ').map(w => w[0]).join('').slice(0,3)}</span>
-              <span className={s.imageLabel}>Dr Ceylon</span>
-            </div>
+            {product.image ? (
+              <img src={product.image} alt={product.name} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+            ) : (
+              <div className={s.imagePlaceholder}>
+                <span className={s.imageInitials}>{product.name.split(' ').map(w => w[0]).join('').slice(0,3)}</span>
+                <span className={s.imageLabel}>Dr Ceylon</span>
+              </div>
+            )}
           </div>
 
           <div className={s.detailInfo}>
@@ -111,7 +115,11 @@ export default async function ProductPage({ params }) {
               {related.map(p => (
                 <Link href={`/products/${p.slug}`} key={p.id} className="card" style={{textDecoration:'none'}}>
                   <div className={s.relatedImg}>
-                    <div className={s.riPlaceholder}>{p.name.split(' ').map(w => w[0]).join('').slice(0,2)}</div>
+                    {p.image ? (
+                      <img src={p.image} alt={p.name} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                    ) : (
+                      <div className={s.riPlaceholder}>{p.name.split(' ').map(w => w[0]).join('').slice(0,2)}</div>
+                    )}
                   </div>
                   <div className={s.productInfo}>
                     <h3 className={s.productName}>{p.name}</h3>
