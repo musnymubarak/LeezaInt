@@ -344,8 +344,6 @@ export default function ExportPage() {
         .why-item h4 { font-size: 0.95rem; font-weight: 700; margin-bottom: 8px; color: #222; }
         .why-item p { font-size: 0.8rem; color: #666; line-height: 1.5; }
         
-        .text-center { text-align: center; }
-        .mb-4 { margin-bottom: 24px; }
         .mt-4 { margin-top: 16px; }
 
         @media (max-width: 1024px) {

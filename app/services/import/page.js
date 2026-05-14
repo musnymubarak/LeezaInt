@@ -219,7 +219,7 @@ export default function ImportPage() {
         .export-dark-hero p {
           color: rgba(253, 246, 227, 0.7);
           font-size: 1.05rem;
-          max-width: 700px;
+          max-width: 600px;
           margin: 0 auto;
         }
         .hero-badge {
