@@ -2,34 +2,14 @@
 import Link from 'next/link';
 import { categories } from '@/src/data/categories';
 import { products } from '@/src/data/products';
+import Hero from './components/Hero';
 
 export default function HomePage() {
   const featured = products.slice(0, 8);
 
   return (
     <>
-      {/* HERO */}
-      <section className="hero">
-        <div className="hero-bg"></div>
-        <div className="container hero-content">
-          <div className="hero-badge">🌿 Premium Ceylon Exports Since 2020</div>
-          <h1>From Sri Lanka&apos;s Finest Fields to Your Global Market</h1>
-          <p className="hero-desc">
-            Discover premium Ceylon cinnamon, tea, coffee, coconut products, and organic European superfoods — 
-            sourced with care, exported with excellence.
-          </p>
-          <div className="hero-actions">
-            <Link href="/products" className="btn btn-primary btn-lg">Explore Products</Link>
-            <Link href="/contact" className="btn btn-ghost btn-lg">Get a Quote</Link>
-          </div>
-          <div className="hero-stats">
-            <div className="stat"><span className="stat-num">32+</span><span className="stat-label">Products</span></div>
-            <div className="stat"><span className="stat-num">7</span><span className="stat-label">Categories</span></div>
-            <div className="stat"><span className="stat-num">20+</span><span className="stat-label">Countries</span></div>
-            <div className="stat"><span className="stat-num">100%</span><span className="stat-label">Quality Assured</span></div>
-          </div>
-        </div>
-      </section>
+      <Hero />
 
       {/* CATEGORIES */}
       <section className="section categories-section">
@@ -171,38 +151,6 @@ export default function HomePage() {
       </section>
 
       <style jsx>{`
-        .hero {
-          position: relative; min-height: 90vh; display: flex; align-items: center;
-          background: linear-gradient(135deg, #1A1208 0%, #2C1810 40%, #3D261A 70%, #4A2E1A 100%);
-          overflow: hidden;
-        }
-        .hero-bg {
-          position: absolute; inset: 0;
-          background: radial-gradient(ellipse at 70% 50%, rgba(201,169,110,0.15) 0%, transparent 60%),
-                      radial-gradient(ellipse at 20% 80%, rgba(45,125,70,0.1) 0%, transparent 50%);
-        }
-        .hero-content { position: relative; z-index: 2; max-width: 720px; padding: 80px 0; }
-        .hero-badge {
-          display: inline-block; padding: 8px 18px; background: rgba(201,169,110,0.15);
-          border: 1px solid rgba(201,169,110,0.3); border-radius: 24px;
-          color: var(--gold); font-size: 0.85rem; font-weight: 500; margin-bottom: 24px;
-        }
-        .hero h1 {
-          font-size: 3.5rem; color: white; line-height: 1.1; margin-bottom: 20px;
-          background: linear-gradient(135deg, #fff 0%, var(--gold-light) 100%);
-          -webkit-background-clip: text; -webkit-text-fill-color: transparent;
-        }
-        .hero-desc { font-size: 1.15rem; color: rgba(255,255,255,0.7); line-height: 1.7; margin-bottom: 32px; }
-        .hero-actions { display: flex; gap: 16px; margin-bottom: 56px; flex-wrap: wrap; }
-        .btn-lg { padding: 16px 32px; font-size: 1rem; }
-        .hero-stats {
-          display: flex; gap: 40px; padding-top: 32px;
-          border-top: 1px solid rgba(255,255,255,0.1);
-        }
-        .stat { display: flex; flex-direction: column; }
-        .stat-num { font-family: var(--font-heading); font-size: 1.8rem; font-weight: 700; color: var(--gold); }
-        .stat-label { font-size: 0.8rem; color: rgba(255,255,255,0.5); margin-top: 2px; }
-
         .section-header-center { text-align: center; margin-bottom: 48px; }
         .section-header-center .section-subtitle { margin: 0 auto; }
         .section-badge {
@@ -283,8 +231,6 @@ export default function HomePage() {
           .products-grid { grid-template-columns: repeat(3, 1fr); }
         }
         @media (max-width: 768px) {
-          .hero h1 { font-size: 2.2rem; }
-          .hero-stats { gap: 24px; flex-wrap: wrap; }
           .products-grid { grid-template-columns: repeat(2, 1fr); }
           .trust-grid { grid-template-columns: 1fr; }
           .services-grid { grid-template-columns: 1fr; }
@@ -292,7 +238,6 @@ export default function HomePage() {
         }
         @media (max-width: 480px) {
           .products-grid { grid-template-columns: 1fr; }
-          .hero-content { padding: 40px 0; }
         }
       `}</style>
     </>
