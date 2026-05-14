@@ -47,7 +47,14 @@ export default function ImportPage() {
 
               <div className="showcase-center">
                 <div className="center-img-wrap">
-                  <Image src="/services/import_agency_3d_hero.png" alt="Corporate Exhibition" fill style={{ objectFit: 'contain' }} priority />
+                  <Image 
+                    src="/services/import_agency_3d_hero.png" 
+                    alt="Corporate Exhibition" 
+                    fill 
+                    sizes="(max-width: 1024px) 100vw, 50vw"
+                    priority 
+                    style={{ objectFit: 'contain' }} 
+                  />
                 </div>
               </div>
 
@@ -91,7 +98,13 @@ export default function ImportPage() {
             <div className="cat-grid">
               <div className="cat-card">
                 <div className="cat-img">
-                  <Image src="/services/import_category_grains.png" alt="Organic Grains" fill style={{ objectFit: 'cover' }} />
+                  <Image 
+                    src="/services/import_category_grains.png" 
+                    alt="Organic Grains" 
+                    fill 
+                    sizes="(max-width: 768px) 100vw, 50vw"
+                    style={{ objectFit: 'cover' }} 
+                  />
                 </div>
                 <div className="cat-content">
                   <h4>Health-Oriented & Organic Foods</h4>
@@ -101,7 +114,13 @@ export default function ImportPage() {
               
               <div className="cat-card">
                 <div className="cat-img">
-                  <Image src="/services/import_category_snacks.png" alt="Specialty Snacks" fill style={{ objectFit: 'cover' }} />
+                  <Image 
+                    src="/services/import_category_snacks.png" 
+                    alt="Specialty Snacks" 
+                    fill 
+                    sizes="(max-width: 768px) 100vw, 50vw"
+                    style={{ objectFit: 'cover' }} 
+                  />
                 </div>
                 <div className="cat-content">
                   <h4>Specialty Foods & Beverages</h4>

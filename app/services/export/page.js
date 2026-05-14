@@ -25,7 +25,13 @@ export default function ExportPage() {
             {/* Top Wide Hero Card */}
             <div className="bento-card hero-card">
               <div className="hero-img-wrap">
-                <Image src="/services/export_bento_hero.png" alt="Global Export" fill style={{ objectFit: 'cover' }} />
+                <Image 
+                  src="/services/export_bento_hero.png" 
+                  alt="Global Export" 
+                  fill 
+                  sizes="(max-width: 1024px) 100vw, 60vw"
+                  style={{ objectFit: 'cover' }} 
+                />
               </div>
               <div className="hero-content">
                 <h2>Premium Ceylon-Origin Products</h2>
@@ -44,7 +50,13 @@ export default function ExportPage() {
               
               <div className="bento-card product-card cinnamon-card">
                 <div className="prod-img-wrap">
-                  <Image src="/services/export_bento_cinnamon.png" alt="Ceylon Cinnamon" fill style={{ objectFit: 'cover' }} />
+                  <Image 
+                    src="/services/export_bento_cinnamon.png" 
+                    alt="Ceylon Cinnamon" 
+                    fill 
+                    sizes="(max-width: 1024px) 100vw, 33vw"
+                    style={{ objectFit: 'cover' }} 
+                  />
                 </div>
                 <div className="prod-content">
                   <div className="prod-header">
@@ -64,7 +76,13 @@ export default function ExportPage() {
 
               <div className="bento-card product-card tea-card">
                 <div className="prod-img-wrap">
-                  <Image src="/services/export_bento_tea.png" alt="Ceylon Tea" fill style={{ objectFit: 'cover' }} />
+                  <Image 
+                    src="/services/export_bento_tea.png" 
+                    alt="Ceylon Tea" 
+                    fill 
+                    sizes="(max-width: 1024px) 100vw, 33vw"
+                    style={{ objectFit: 'cover' }} 
+                  />
                 </div>
                 <div className="prod-content">
                   <div className="prod-header">
@@ -88,13 +106,25 @@ export default function ExportPage() {
                   <p style={{ fontSize: '0.9rem', color: '#666', lineHeight: 1.5 }}>Exporting to 20+ countries across EU, UK, GCC, and Asia with trusted logistics.</p>
                 </div>
                 <div className="map-img-wrap" style={{ height: '100%', minHeight: '200px' }}>
-                  <Image src="/services/export_bento_map.png" alt="Global Reach Map" fill style={{ objectFit: 'contain' }} />
+                  <Image 
+                    src="/services/export_bento_map.png" 
+                    alt="Global Reach Map" 
+                    fill 
+                    sizes="(max-width: 1024px) 100vw, 40vw"
+                    style={{ objectFit: 'contain' }} 
+                  />
                 </div>
               </div>
 
               <div className="bento-card product-card horizontal-card coconut-card">
                 <div className="prod-img-wrap" style={{ height: '100%', minHeight: '220px' }}>
-                  <Image src="/services/export_bento_coconut.png" alt="Coconut Products" fill style={{ objectFit: 'cover' }} />
+                  <Image 
+                    src="/services/export_bento_coconut.png" 
+                    alt="Coconut Products" 
+                    fill 
+                    sizes="(max-width: 1024px) 100vw, 50vw"
+                    style={{ objectFit: 'cover' }} 
+                  />
                 </div>
                 <div className="prod-content">
                   <div className="prod-header">

@@ -32,13 +32,22 @@ export default function Navbar() {
             </span>
             <div className={`${s.dropdownMenu} ${servicesOpen ? s.show : ''}`}>
               <Link href="/services/import" className={`${s.dropdownItem} ${isActive('/services/import') ? s.active : ''}`} onClick={() => setOpen(false)}>
-                <span className={s.dropdownIcon}>📦</span>Import Services
+                <span className={s.dropdownIcon}>
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"/><polyline points="3.29 7 12 12 20.71 7"/><line x1="12" y1="22" x2="12" y2="12"/></svg>
+                </span>
+                Import Services
               </Link>
               <Link href="/services/export" className={`${s.dropdownItem} ${isActive('/services/export') ? s.active : ''}`} onClick={() => setOpen(false)}>
-                <span className={s.dropdownIcon}>🚢</span>Export Services
+                <span className={s.dropdownIcon}>
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="7.5 4.21 12 6.81 16.5 4.21"/><polyline points="7.5 19.79 7.5 14.6 3 12"/><polyline points="21 12 16.5 14.6 16.5 19.79"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12.01"/></svg>
+                </span>
+                Export Services
               </Link>
               <Link href="/services/import-export-agent" className={`${s.dropdownItem} ${isActive('/services/import-export-agent') ? s.active : ''}`} onClick={() => setOpen(false)}>
-                <span className={s.dropdownIcon}>🌐</span>Import &amp; Export Agent
+                <span className={s.dropdownIcon}>
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                </span>
+                Import &amp; Export Agent
               </Link>
             </div>
           </div>

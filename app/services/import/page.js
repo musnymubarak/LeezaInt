@@ -40,7 +40,13 @@ export default function ImportPage() {
                 <p className="mt-4">Our role is to provide consistent supply, clear specifications, and transparent trade execution—not opportunistic trading.</p>
               </div>
               <div className="zz-img-wrap">
-                <Image src="/services/import_category_grains.png" alt="Bulk Imports" fill style={{ objectFit: 'cover' }} />
+                <Image 
+                  src="/services/import_category_grains.png" 
+                  alt="Bulk Imports" 
+                  fill 
+                  sizes="(max-width: 1024px) 100vw, 50vw"
+                  style={{ objectFit: 'cover' }} 
+                />
                 <div className="zz-icons-bar">
                   <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#68C3A3" strokeWidth="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
                   <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#68C3A3" strokeWidth="2"><path d="M12 22c5-5 5-11 0-14-5 3-5 9 0 14z"/></svg>
@@ -64,7 +70,13 @@ export default function ImportPage() {
                 </ul>
               </div>
               <div className="zz-img-wrap">
-                <Image src="/services/import_category_snacks.png" alt="Product Categories" fill style={{ objectFit: 'cover' }} />
+                <Image 
+                  src="/services/import_category_snacks.png" 
+                  alt="Product Categories" 
+                  fill 
+                  sizes="(max-width: 1024px) 100vw, 50vw"
+                  style={{ objectFit: 'cover' }} 
+                />
               </div>
             </div>
 
@@ -80,7 +92,13 @@ export default function ImportPage() {
                 </ul>
               </div>
               <div className="zz-img-wrap">
-                <Image src="/services/import_agency_3d_hero.png" alt="International Suppliers" fill style={{ objectFit: 'cover' }} />
+                <Image 
+                  src="/services/import_agency_3d_hero.png" 
+                  alt="International Suppliers" 
+                  fill 
+                  sizes="(max-width: 1024px) 100vw, 50vw"
+                  style={{ objectFit: 'cover' }} 
+                />
               </div>
             </div>
 
@@ -96,7 +114,13 @@ export default function ImportPage() {
               
               <div className="sector-card">
                 <div className="sector-img">
-                  <Image src="/services/import_organic_superfoods.png" alt="Feed Mills" fill style={{ objectFit: 'cover' }} />
+                  <Image 
+                    src="/services/import_organic_superfoods.png" 
+                    alt="Feed Mills" 
+                    fill 
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    style={{ objectFit: 'cover' }} 
+                  />
                 </div>
                 <div className="sector-content">
                   <div className="sector-header">
@@ -113,7 +137,13 @@ export default function ImportPage() {
 
               <div className="sector-card">
                 <div className="sector-img">
-                  <Image src="/services/import_specialty_foods.png" alt="Industrial Farms" fill style={{ objectFit: 'cover' }} />
+                  <Image 
+                    src="/services/import_specialty_foods.png" 
+                    alt="Industrial Farms" 
+                    fill 
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    style={{ objectFit: 'cover' }} 
+                  />
                 </div>
                 <div className="sector-content">
                   <div className="sector-header">
@@ -130,7 +160,13 @@ export default function ImportPage() {
 
               <div className="sector-card">
                 <div className="sector-img">
-                  <Image src="/services/import_market_entry.png" alt="Dairy Sector" fill style={{ objectFit: 'cover' }} />
+                  <Image 
+                    src="/services/import_market_entry.png" 
+                    alt="Dairy Sector" 
+                    fill 
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    style={{ objectFit: 'cover' }} 
+                  />
                 </div>
                 <div className="sector-content">
                   <div className="sector-header">
@@ -147,7 +183,13 @@ export default function ImportPage() {
 
               <div className="sector-card">
                 <div className="sector-img">
-                  <Image src="/services/import_trade_logistics.png" alt="Logistics & Supply Chain" fill style={{ objectFit: 'cover' }} />
+                  <Image 
+                    src="/services/import_trade_logistics.png" 
+                    alt="Logistics & Supply Chain" 
+                    fill 
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    style={{ objectFit: 'cover' }} 
+                  />
                 </div>
                 <div className="sector-content">
                   <div className="sector-header">
@@ -164,7 +206,13 @@ export default function ImportPage() {
 
               <div className="sector-card">
                 <div className="sector-img">
-                  <Image src="/services/import_product_positioning.png" alt="Agri-Inputs Sourcing" fill style={{ objectFit: 'cover' }} />
+                  <Image 
+                    src="/services/import_product_positioning.png" 
+                    alt="Agri-Inputs Sourcing" 
+                    fill 
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    style={{ objectFit: 'cover' }} 
+                  />
                 </div>
                 <div className="sector-content">
                   <div className="sector-header">
@@ -181,7 +229,13 @@ export default function ImportPage() {
 
               <div className="sector-card">
                 <div className="sector-img">
-                  <Image src="/services/import_regulatory_compliance.png" alt="Global Import Advisory" fill style={{ objectFit: 'cover' }} />
+                  <Image 
+                    src="/services/import_regulatory_compliance.png" 
+                    alt="Global Import Advisory" 
+                    fill 
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    style={{ objectFit: 'cover' }} 
+                  />
                 </div>
                 <div className="sector-content">
                   <div className="sector-header">
